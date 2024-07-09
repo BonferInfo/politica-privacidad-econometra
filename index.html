@@ -45,6 +45,62 @@
     <h2>Almacenamiento y Protección de los Datos</h2>
     <p>Los datos personales se almacenan en los servicios de Firebase. Firebase ofrece varias capas de seguridad, incluyendo el cifrado de datos en tránsito utilizando HTTPS y el cifrado de datos en reposo. Además, Firebase cuenta con una infraestructura de seguridad robusta que incluye autenticación de usuarios y reglas de seguridad personalizables para el acceso a la base de datos.</p>
     <p>Implementamos medidas adicionales de seguridad, como el monitoreo continuo de nuestras bases de datos para detectar y prevenir accesos no autorizados y la realización de copias de seguridad regulares para evitar la pérdida de datos.</p>
+
+    <h2>Información Recopilada por Firebase para el Rendimiento de Aplicaciones</h2>
+    <h3>Datos de Dispositivo y Aplicación</h3>
+    <ul>
+        <li>Tipo de dispositivo: Marca y modelo del dispositivo.</li>
+        <li>Sistema operativo: Versión del sistema operativo en el dispositivo.</li>
+        <li>Versión de la aplicación: La versión específica de la aplicación que está siendo utilizada.</li>
+        <li>Identificadores del dispositivo: Identificadores anónimos, como el ID de publicidad de Android o el ID de dispositivo.</li>
+    </ul>
+    <h3>Métricas de Rendimiento</h3>
+    <ul>
+        <li>Tiempo de inicio de la aplicación: El tiempo que tarda la aplicación en iniciarse.</li>
+        <li>Latencia de pantalla: El tiempo que tarda en cargar cada pantalla dentro de la aplicación.</li>
+        <li>Seguimiento de eventos: Eventos específicos definidos por el desarrollador para medir el rendimiento de ciertas acciones en la aplicación.</li>
+        <li>Solicitudes de red: Información sobre las solicitudes de red que realiza la aplicación, incluyendo el tiempo que tarda en completar cada solicitud, el éxito o fallo de las mismas, y el tamaño de las cargas/descargas.</li>
+    </ul>
+    <h3>Datos de Errores y Crashes</h3>
+    <ul>
+        <li>Informes de errores: Información sobre errores y crashes que ocurren dentro de la aplicación, incluyendo rastreos de pila, mensajes de error, y el estado del dispositivo en el momento del error.</li>
+        <li>Condiciones previas al error: Información sobre el estado del dispositivo y la aplicación antes de que ocurra un error, como el nivel de batería, estado de conectividad y uso de memoria.</li>
+    </ul>
+    <h3>Datos de Uso</h3>
+    <ul>
+        <li>Sesiones de usuario: Información sobre cuándo y cómo los usuarios interactúan con la aplicación, incluyendo la duración de las sesiones y las acciones realizadas durante las mismas.</li>
+        <li>Navegación dentro de la aplicación: Datos sobre cómo los usuarios navegan entre las diferentes pantallas y características de la aplicación.</li>
+    </ul>
+    <h3>¿Cómo Se Utiliza Esta Información?</h3>
+    <p>Firebase utiliza esta información para proporcionar informes y análisis a los desarrolladores de aplicaciones, lo que les permite:</p>
+    <ul>
+        <li>Identificar y solucionar problemas de rendimiento: Los desarrolladores pueden ver qué partes de su aplicación están causando problemas y trabajar para mejorarlas.</li>
+        <li>Mejorar la experiencia del usuario: Al comprender cómo los usuarios interactúan con la aplicación, los desarrolladores pueden hacer cambios para mejorar la usabilidad y el rendimiento.</li>
+        <li>Monitorear la estabilidad de la aplicación: Firebase ayuda a los desarrolladores a rastrear errores y crashes, permitiéndoles implementar correcciones rápidamente.</li>
+    </ul>
+    <h3>Seguridad y Privacidad</h3>
+    <p>Firebase toma medidas para proteger la privacidad y seguridad de los datos recopilados, incluyendo:</p>
+    <ul>
+        <li>Cifrado de datos: Los datos se cifran en tránsito y en reposo para protegerlos contra accesos no autorizados.</li>
+        <li>Anonimización de datos: Los datos recopilados se anonimizan y agregan en muchos casos para proteger la identidad de los usuarios individuales.</li>
+        <li>Control de acceso: Solo los desarrolladores autorizados pueden acceder a los datos de su aplicación, y Firebase ofrece herramientas para gestionar estos permisos.</li>
+    </ul>
+
+    <h2>Identificadores de Dispositivo Recopilados por Firebase</h2>
+    <p>Firebase recopila varios identificadores de dispositivo que son útiles para análisis y seguimiento. Estos pueden incluir:</p>
+    <ul>
+        <li>ID de Publicidad de Android: Un identificador único para cada dispositivo Android que los usuarios pueden restablecer. Se utiliza para fines de publicidad y análisis.</li>
+        <li>ID de Instalación de Firebase: Un identificador único asignado por Firebase para identificar de forma anónima una instancia específica de la aplicación.</li>
+        <li>ID del Dispositivo: Un identificador único del dispositivo, como el número de serie o el ID del hardware.</li>
+        <li>ID de Aplicación: Un identificador único para la instancia de la aplicación instalada en el dispositivo.</li>
+    </ul>
+
+    <h2>Recopilación de la Localización por Firebase</h2>
+    <p>Si no estás solicitando explícitamente el permiso de localización al usuario, Firebase generalmente no recopila información de ubicación precisa. Sin embargo, hay algunos aspectos a tener en cuenta:</p>
+    <ul>
+        <li>Ubicación Aproximada: Aunque Firebase no recopila datos de ubicación precisa sin permisos explícitos, puede inferir una ubicación aproximada basada en la dirección IP del dispositivo. Esta ubicación no es muy precisa y generalmente solo indica la región o ciudad en la que se encuentra el dispositivo.</li>
+        <li>Servicios Específicos: Algunas funcionalidades específicas de Firebase, como Firebase Analytics, pueden utilizar la dirección IP para inferir datos de ubicación aproximada. Estos datos son anónimos y se utilizan principalmente para análisis regionales y no para seguimiento de ubicaciones precisas.</li>
+    </ul>
     
     <h2>Permisos Solicitados en la Aplicación</h2>
     <div class="permissions">
