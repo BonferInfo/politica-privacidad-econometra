@@ -101,6 +101,15 @@
         <li>Ubicación Aproximada: Aunque Firebase no recopila datos de ubicación precisa sin permisos explícitos, puede inferir una ubicación aproximada basada en la dirección IP del dispositivo. Esta ubicación no es muy precisa y generalmente solo indica la región o ciudad en la que se encuentra el dispositivo.</li>
         <li>Servicios Específicos: Algunas funcionalidades específicas de Firebase, como Firebase Analytics, pueden utilizar la dirección IP para inferir datos de ubicación aproximada. Estos datos son anónimos y se utilizan principalmente para análisis regionales y no para seguimiento de ubicaciones precisas.</li>
     </ul>
+
+    <h2>Retención de Datos por Firebase</h2>
+    <p>Firebase tiene políticas de retención de datos específicas para cada uno de sus servicios:</p>
+    <ul>
+        <li>Firebase Analytics: Los datos de análisis se retienen de forma predeterminada durante 14 meses. Los identificadores de usuario pueden restablecerse por los usuarios en cualquier momento.</li>
+        <li>Firebase Crashlytics: Los informes de fallos y errores se retienen durante un período que permita a los desarrolladores analizar y corregir problemas en sus aplicaciones.</li>
+        <li>Firebase Cloud Messaging: Los mensajes se eliminan después de ser entregados o expiran si no se pueden entregar dentro de un período específico.</li>
+        <li>Firebase Authentication: Los datos de autenticación se retienen mientras el usuario tenga una cuenta activa en la aplicación. Los datos pueden eliminarse cuando un usuario solicita la eliminación de su cuenta.</li>
+    </ul>
     
     <h2>Permisos Solicitados en la Aplicación</h2>
     <div class="permissions">
